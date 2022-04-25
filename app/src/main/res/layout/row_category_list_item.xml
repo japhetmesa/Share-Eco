@@ -19,8 +19,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:id="@+id/iv_imageView"
-            android:background="@color/purple_200"/>
+            android:id="@+id/iv_imageView"/>
 
         <TextView
             android:layout_width="match_parent"
