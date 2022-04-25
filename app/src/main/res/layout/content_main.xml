@@ -22,8 +22,9 @@
         android:layout_marginBottom="2.5dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_categories"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/rv_categories"
-        android:layout_below="@id/sv_search"/>
+        android:layout_below="@id/sv_search"
+        android:layout_marginBottom="10dp"/>
 </RelativeLayout>
