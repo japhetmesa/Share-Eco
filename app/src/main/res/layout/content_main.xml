@@ -16,18 +16,42 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/mobile_navigation" />
 
-    <SearchView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:id="@+id/sv_search"
-        android:layout_marginBottom="2.5dp"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_search"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Search by name of product/service"
+            android:layout_marginEnd="5dp"
+            android:textSize="14sp"
+            android:id="@+id/et_search"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="SEARCH"
+            android:textColor="@color/purple_200"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:id="@+id/sv_search"/>
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_categories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sv_search"
-        android:layout_marginBottom="10dp"/>
+        android:layout_below="@id/ll_search"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_featured"
